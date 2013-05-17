@@ -72,8 +72,8 @@ var PageTransitions = (function() {
 		 */
 		switch (current ) {
 			case 0:
-				$('#iterateEffects').html('La Teresa').show();
-				$('#elKO').html('La Teresa').hide();
+				$('#iterateEffects').html('Qui vols que sigui?').show();
+				$('#elKO').html('Ningú en concret').hide();
 				break;
 			case 1:
 				$('#iterateEffects').html('Vull un regal!').show();
