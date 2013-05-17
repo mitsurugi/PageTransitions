@@ -67,6 +67,31 @@ var PageTransitions = (function() {
 			current = 0;
 		}
 
+		/**
+		 * Apanyuuuu
+		 */
+		switch (current ) {
+			case 0:
+				$('#iterateEffects').html('La Teresa').show();
+				$('#elKO').html('La Teresa').hide();
+				break;
+			case 1:
+				$('#iterateEffects').html('Vull un regal!').show();
+				$('#elKO').html('No, no vull cap regal').show();
+				break;
+			case 2:
+				$('#iterateEffects').html('Que vull el meu regal!').show();
+				$('#elKO').html('Tinc coses millor a fer ...').show();
+				break;
+			case 3:
+				$('#iterateEffects').html('Vull saber-ne més ...').show();
+				$('#elKO').html('x').hide();
+				break;
+			case 4:
+				$('#iterateEffects').html('Més, més ...').show();
+				break;
+		}
+
 		var $nextPage = $pages.eq( current ).addClass( 'pt-page-current' ),
 			outClass = '', inClass = '';
 
