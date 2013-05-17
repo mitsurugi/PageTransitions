@@ -2,7 +2,7 @@ var PageTransitions = (function() {
 
 	var $main = $( '#pt-main' ),
 		$pages = $main.children( 'div.pt-page' ),
-		$iterate = $( '#iterateEffects' ),
+		$iterate = $( '.disparador' ),
 		animcursor = 1,
 		pagesCount = $pages.length,
 		current = 0,
@@ -19,7 +19,7 @@ var PageTransitions = (function() {
 		animEndEventName = animEndEventNames[ Modernizr.prefixed( 'animation' ) ],
 		// support css animations
 		support = Modernizr.cssanimations;
-	
+
 	function init() {
 
 		$pages.each( function() {
@@ -57,7 +57,7 @@ var PageTransitions = (function() {
 		}
 
 		isAnimating = true;
-		
+
 		var $currPage = $pages.eq( current );
 
 		if( current < pagesCount - 1 ) {
