@@ -70,7 +70,7 @@ var PageTransitions = (function() {
 		/**
 		 * Apanyuuuu
 		 */
-		switch (current ) {
+		switch (current) {
 			case 0:
 				$('#iterateEffects').html('Qui vols que sigui?').show();
 				$('#elKO').html('Ningú en concret').hide();
@@ -95,7 +95,7 @@ var PageTransitions = (function() {
 		var $nextPage = $pages.eq( current ).addClass( 'pt-page-current' ),
 			outClass = '', inClass = '';
 
-		switch( animation ) {
+		switch(animation) {
 
 			case 1:
 				outClass = 'pt-page-moveToLeft';
