@@ -1,3 +1,11 @@
+<?php
+	if ($_POST['mail_send'] != '') {
+		$missatge = file_get_contents("plantilla.html");
+		$headers = "";
+		mail('didac.rios@gmail.com', 'Felicitats Teresa,el teu regal', $missatge, $headers);
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 	<head>
@@ -55,7 +63,7 @@
 				<h1>
 					<span>Dissabte</span>
 					Ferrada
-					<i class="icon-ferrada" style="font-size:170%; margin-top: 6px;"></i>
+					<i class="icon-ferrada" style="font-size:150%"></i>
 				</h1>
 			</div>
 
@@ -63,7 +71,7 @@
 				<h1>
 					<span>Dissabte <strong>nit</strong></span>
 					Sopar de gala
-					<i class="icon-gala" style="font-size:170%; margin-top: 6px;"></i>
+					<i class="icon-gala" style="font-size:150%"></i>
 				</h1>
 			</div>
 
@@ -71,7 +79,7 @@
 				<h1>
 					<span>Diumenge <strong>mati</strong></span>
 					Relax
-					<i class="icon-piscina" style="font-size:170%; margin-top: 6px;"></i>
+					<i class="icon-piscina" style="font-size:150%"></i>
 				</h1>
 			</div>
 
@@ -85,11 +93,11 @@
 
 			<div class="pt-page pt-page-9">
 				<h1>
-					L'últim pas
-					<span>Deixa'ns el teu correu i rebràs tots els detalls del teu cap de setmana</span>
+					<span>L'últim pas</span><br>
+					Deixa'ns el teu correu i rebràs tots els detalls del teu cap de setmana
 					<form action="enviar.php" method="post">
-						<input type="email" name="mail_send" id="mail_send" style="font-size:50%;">
-						<input type="submit" value="Apunta'm" name="trigger" class="pt-touch-button" style="margin:auto; max-width: 25%">
+						<input type="email" name="mail_send" id="mail_send">
+						<input type="submit" value="Apunta't">
 					</form>
 				</h1>
 			</div>			

@@ -80,7 +80,7 @@ var PageTransitions = (function() {
 				$('#elKO').html('No, no vull cap regal').show();
 				break;
 			case 2:
-				$('#iterateEffects').html('Que vull el meu regal!').show();
+				$('#iterateEffects').html('Que vull el meu regal ... ¬_¬').show();
 				$('#elKO').html('Tinc coses millor a fer ...').show();
 				break;
 			case 3:
@@ -88,7 +88,25 @@ var PageTransitions = (function() {
 				$('#elKO').html('x').hide();
 				break;
 			case 4:
-				$('#iterateEffects').html('Més, més ...').show();
+				$('#iterateEffects').html('Oh! M\'agrada, que més? ...').show();
+				break;
+
+			case 5:
+				$('#iterateEffects').html('Bo ... Mostra\'m més!').show();
+				break;
+
+			case 6:
+				$('#iterateEffects').html('Res més?').show();
+				break;
+
+			case 7:
+				$('#iterateEffects').html('Clar que si!').show();
+				$('#elKO').html('No, passo').show();
+				break;
+
+			case 8:
+				$('#iterateEffects').html('x').hide();
+				$('#elKO').html('x').hide();
 				break;
 		}
 

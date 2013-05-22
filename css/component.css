@@ -48,13 +48,13 @@ html, body { height: 100%; }
 	font-weight: 300;
 	font-size: 4.4em;
 	line-height: 1;
-	letter-spacing: 6px;
+	/*letter-spacing: 6px;*/
 	margin: 0;
 	top: 12%;
 	width: 100%;
 	text-align: center;
 	text-transform: uppercase;
-	word-spacing: -0.3em;
+	/*word-spacing: -0.3em;*/
 }
 
 .pt-page h1 span {
@@ -65,7 +65,7 @@ html, body { height: 100%; }
 	word-spacing: 0;
 	letter-spacing: 0;
 	display: block;
-	opacity: 0.4;
+	opacity: 0.8;
 }
 
 .pt-page h1 strong {
@@ -95,6 +95,17 @@ html, body { height: 100%; }
 .pt-page-6 {
 	background: #f68dbb;
 }
+.pt-page-7 {
+	background: #60d7a9;
+}
+
+.pt-page-8 {
+	background: #fd6a62;
+}
+
+.pt-page-9 {
+	background: #60d7a9;
+}
 
 /* Triggers (menu and button) */
 
@@ -102,7 +113,8 @@ html, body { height: 100%; }
 	position: absolute;
 	width: 300px;
 	z-index: 999999;
-	top: 12%;
+	/*top: 20%;*/
+	bottom: 2%;
 	left: 50%;
 	margin-top: 130px;
 	-webkit-transform: translateX(-50%);
@@ -202,4 +214,64 @@ html, body { height: 100%; }
 	.pt-triggers .dl-menuwrapper {
 		display: none;
 	}
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'felicitats';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-tick, .icon-uni, .icon-thumbsup, .icon-piscina, .icon-maleta, .icon-gala, .icon-cotxe, .icon-calendari, .icon-pastis, .icon-ferrada {
+	font-family: 'felicitats';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	display:block;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-tick:before {
+	content: "\30";
+}
+.icon-uni:before {
+	content: "\31";
+}
+.icon-thumbsup:before {
+	content: "\32";
+}
+.icon-piscina:before {
+	content: "\33";
+}
+.icon-maleta:before {
+	content: "\34";
+}
+.icon-gala:before {
+	content: "\35";
+}
+.icon-cotxe:before {
+	content: "\36";
+}
+.icon-calendari:before {
+	content: "\37";
+}
+.icon-pastis:before {
+	content: "\38";
+}
+.icon-ferrada:before {
+	content: "\39";
 }
