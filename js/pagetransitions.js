@@ -72,16 +72,16 @@ var PageTransitions = (function() {
 		 */
 		switch (current) {
 			case 0:
-				$('#iterateEffects').html('Qui vols que sigui?').show();
-				$('#elKO').html('Ningú en concret').hide();
+				$('#iterateEffects').html('Clic per iniciar').show();
+				$('#elKO').html('Sortir').hide();
 				break;
 			case 1:
-				$('#iterateEffects').html('Vull un regal!').show();
+				$('#iterateEffects').html('Veure el meu regal!').show();
 				$('#elKO').html('No, no vull cap regal').show();
 				break;
 			case 2:
-				$('#iterateEffects').html('Que vull el meu regal ... ¬_¬').show();
-				$('#elKO').html('Tinc coses millor a fer ...').show();
+				$('#iterateEffects').html('Un finde diferent').show();
+				$('#elKO').html('Tinc coses a fer ...').show();
 				break;
 			case 3:
 				$('#iterateEffects').html('Vull saber-ne més ...').show();

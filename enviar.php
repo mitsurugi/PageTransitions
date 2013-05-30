@@ -1,8 +1,9 @@
 <?php
 	if ($_POST['mail_send'] != '') {
 		$missatge = file_get_contents("plantilla.html");
-		$headers = "";
-		mail('didac.rios@gmail.com', 'Felicitats Teresa,el teu regal', $missatge, $headers);
+		$headers = "From: Dídac <didac.rios@gmail.com>\nContent-Type: text/html; charset=utf-8";
+
+		mail('didac.rios@gmail.com', 'Felicitats Teresa, aquí tens el teu regal', $missatge, $headers);
 	}
 ?>
 
