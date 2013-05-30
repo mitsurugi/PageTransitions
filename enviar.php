@@ -34,9 +34,21 @@
 
 		<div id="pt-main" class="pt-perspective">
 			<div class="pt-page pt-page-1">
+				<?php
+					if ($_POST['mail_send'] != '') {
+						echo '
+							<h1>
+								<span>Revisa el correu</span><strong>:)</strong>
+							</h1>
+						';
+					} else {
+				?>				
 				<h1>
 					<span>Benvinguda</span><strong>Qui</strong> ets?
 				</h1>
+				<?php
+					}
+				?>
 			</div>
 
 			<div class="pt-page pt-page-2">
